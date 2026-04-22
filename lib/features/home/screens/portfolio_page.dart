@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manish_flutter_portfolio/core/utils/responsive.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/about/about_section.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/certificate/certificate_section.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/contact/contact_section.dart';
@@ -29,6 +30,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
   };
   @override
   Widget build(BuildContext context) {
+    final isMobile = Responsive.isMobile(context);
     return Scaffold(
       key: _scaffoldKey,
       drawer: Drawer(),
@@ -83,8 +85,8 @@ class _PortfolioPageState extends State<PortfolioPage> {
             ),
           ),
           Positioned(
-            bottom: 80,
-            right: 60,
+            bottom: isMobile ? 32 : 80,
+            right: isMobile ? 32 : 60,
             child: _ScrollToTopButton(scrollController: _scrollController),
           ),
         ],

@@ -37,20 +37,27 @@ class _ProjectSectionState extends ConsumerState<ProjectSection> {
               ),
             ),
             const SizedBox(height: 64),
-            GridView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              itemCount: _showAll ? projects.length : 3,
-              shrinkWrap: true,
-              itemBuilder: (_, index) => AnimatedCustom(
-                delay: Duration(milliseconds: index * 150),
-                child: ProjectCard(project: projects[index]),
-              ),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: isDesktop ? 3 : (isMobile ? 1 : 2),
-                crossAxisSpacing: 24,
-                mainAxisSpacing: 24,
-                childAspectRatio: isMobile ? 1.1 : 0.85,
-              ),
+            LayoutBuilder(
+              builder: (context, constraints) {
+                final cols = isDesktop ? 3 : (isMobile ? 1 : 2);
+                final spacing = 24.0;
+                final cardWidth =
+                    (constraints.maxWidth - (spacing * (cols - 1))) / cols;
+                return Wrap(
+                  spacing: spacing,
+                  runSpacing: spacing,
+                  children: List.generate(
+                    _showAll ? projects.length : 3,
+                    (index) => SizedBox(
+                      width: cardWidth,
+                      child: AnimatedCustom(
+                        delay: Duration(milliseconds: index * 150),
+                        child: ProjectCard(project: projects[index]),
+                      ),
+                    ),
+                  ),
+                );
+              },
             ),
             const SizedBox(height: 48),
             AnimatedCustom(

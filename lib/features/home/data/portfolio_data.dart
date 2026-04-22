@@ -84,7 +84,7 @@ List<Project> projects(Ref ref) {
     Project(
       title: 'Recruitment & Career Platform',
       description:
-          'A job and internship discovery app with intelligent search, resume upload, one-tap applications, interview tracker, and personalized career analytics. Rated 4.8★ with 100+ downloads.',
+          'A job and internship discovery app with resume upload, one-tap applications and personalized career analytics. Rated 4.8★ with 100+ downloads.',
       techStack: ['Flutter', 'Dart', 'REST API', 'Firebase', 'GetX'],
       emoji: '💼',
       isFeatured: true,
