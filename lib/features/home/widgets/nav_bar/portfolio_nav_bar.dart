@@ -90,7 +90,10 @@ class _PortfolioNavBarState extends ConsumerState<PortfolioNavBar> {
                   child: Row(
                     children: [
                       _LogoWidget(),
-                      if (!isMobile) MadeWithFlutter(),
+                      if (!isMobile) ...[
+                        SizedBox(width: 16),
+                        MadeWithFlutter(),
+                      ],
                       const Spacer(),
                       if (!isMobile) ...[
                         NavLinks(onTap: _scrollTo),
