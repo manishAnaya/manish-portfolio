@@ -40,6 +40,21 @@ List<Experience> experiences(Ref ref) {
         'Maintained consistent UI/UX standards across all apps by translating Figma designs into reusable Flutter component systems.',
       ],
     ),
+    Experience(
+      company: 'IBigdo Technology',
+      role: 'Junior Flutter Developer',
+      duration: 'Aug 2020 – Jun 2022',
+      location: 'Noida, Uttar Pradesh · On-site',
+      isCurrent: false,
+      logoEmoji: '💡',
+      responsibilities: const [
+        'Contributed to the development and enhancement of cross-platform mobile applications using Flutter and Dart across Android and iOS.',
+        'Collaborated with technical and design teams to translate requirements and functional specifications into working app features.',
+        'Integrated third-party REST APIs and services to enable real-time data retrieval and functionality within mobile apps.',
+        'Maintained detailed records of releases, bug fixes, and software changes for optimum traceability and team alignment.',
+        'Wrote clean, modular Dart code following team conventions — building a strong foundation in mobile app architecture.',
+      ],
+    ),
   ];
 }
 

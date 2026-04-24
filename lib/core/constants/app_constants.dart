@@ -7,7 +7,7 @@ class AppConstants {
   static const String tagline =
       'Building production-grade Flutter apps\nand stepping into the world of Generative AI';
   static const String bio =
-      'Flutter developer with 4+ years of experience shipping cross-platform apps '
+      'Flutter developer with 5+ years of experience shipping cross-platform apps '
       'across fintech, edtech, e-commerce, and enterprise domains. '
       'Currently building AI-powered products at Finva Tech and actively upskilling '
       'in Generative AI — with certifications from GUVI, Scaler, and OutSkill. '
@@ -18,10 +18,10 @@ class AppConstants {
   static const String location = 'Bengaluru, India';
   static const String currentCompany = 'Finva Tech Pvt Ltd';
   static const String degree = 'B.Tech';
-  static const String expYears = '4+';
+  static const String expYears = '5+';
   static const String appsBuilt = '10+';
   static const String aiCert = '3';
-  static const String compWorks = '2';
+  static const String compWorks = '3';
   static const String linkedIn =
       'https://www.linkedin.com/in/manish-kumar-agrahari-18361a177/';
   static const String github = 'https://github.com/manishAnaya';
