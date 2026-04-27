@@ -23,6 +23,7 @@ class ContactSection extends StatelessWidget {
           children: [
             const AnimatedCustom(
               child: SectionHeader(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 label: 'Contact',
                 title: 'Let\'s Work Together',
                 subtitle:

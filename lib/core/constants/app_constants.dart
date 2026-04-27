@@ -38,7 +38,16 @@ class AppConstants {
     'Experience',
     'Certificates',
     'Projects',
+    'AI Chat',
     'Contact',
+  ];
+
+  static const List<String> suggestions = [
+    '🚀 What projects has Manish built?',
+    '🧠 What AI skills does he have?',
+    '💼 Tell me about his experience',
+    '📱 What tech stack does he use?',
+    '📬 How can I contact Manish?',
   ];
 
   // Breakpoints

@@ -41,11 +41,11 @@ class PortfolioFooter extends StatelessWidget {
                 Column(
                   children: [
                     const _FooterLinks(),
-                    const SizedBox(height: 16),
                     const MadeWithFlutter(),
+                    _Copyright(),
                   ],
                 ),
-                _Copyright(),
+                const SizedBox(width: 32),
               ],
             ),
     );

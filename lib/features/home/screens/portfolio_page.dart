@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:manish_flutter_portfolio/core/utils/responsive.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/about/about_section.dart';
+import 'package:manish_flutter_portfolio/features/home/widgets/ai_chat/ai_chat_fab.dart';
+import 'package:manish_flutter_portfolio/features/home/widgets/ai_chat/ai_chat_section.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/certificate/certificate_section.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/contact/contact_section.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/experience/experience_section.dart';
@@ -26,11 +27,11 @@ class _PortfolioPageState extends State<PortfolioPage> {
     'Experience': GlobalKey(),
     'Certificates': GlobalKey(),
     'Projects': GlobalKey(),
+    'AI Chat': GlobalKey(),
     'Contact': GlobalKey(),
   };
   @override
   Widget build(BuildContext context) {
-    final isMobile = Responsive.isMobile(context);
     return Scaffold(
       key: _scaffoldKey,
       drawer: Drawer(),
@@ -65,6 +66,10 @@ class _PortfolioPageState extends State<PortfolioPage> {
                       child: ProjectSection(),
                     ),
                     KeyedSubtree(
+                      key: _sectionKeys['AI Chat'],
+                      child: AIChatSection(),
+                    ),
+                    KeyedSubtree(
                       key: _sectionKeys['Contact'],
                       child: ContactSection(),
                     ),
@@ -85,10 +90,11 @@ class _PortfolioPageState extends State<PortfolioPage> {
             ),
           ),
           Positioned(
-            bottom: isMobile ? 32 : 80,
-            right: isMobile ? 32 : 60,
+            bottom: 32,
+            right: 96,
             child: _ScrollToTopButton(scrollController: _scrollController),
           ),
+          const Positioned.fill(child: AIChatFAB()),
         ],
       ),
     );
