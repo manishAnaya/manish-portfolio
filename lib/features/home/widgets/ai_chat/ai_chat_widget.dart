@@ -206,7 +206,7 @@ class _EmptyState extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Ask me anything about his experience,\nprojects, skills, or how to get in touch.',
+            'Ask AI Assistant anything about his experience,\nprojects, skills, or how to get in touch.',
             style: textTheme.bodySmall?.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.5),
               height: 1.6,

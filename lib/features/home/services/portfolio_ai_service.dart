@@ -4,7 +4,8 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'portfolio_ai_service.g.dart';
 
 class PortfolioAIService {
-  static const _baseUrl = 'http://127.0.0.1:8000';
+  static const _baseUrl =
+      'https://portfolioagent-production-4fe1.up.railway.app';
 
   Future<String> askQuestion(String question) async {
     try {

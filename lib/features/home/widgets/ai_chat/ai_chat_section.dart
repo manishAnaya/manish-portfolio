@@ -35,7 +35,7 @@ class AIChatSection extends StatelessWidget {
                 // Responsive layout
                 isDesktop
                     ? Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           // Left — info panel
                           Expanded(flex: 4, child: _InfoPanel()),

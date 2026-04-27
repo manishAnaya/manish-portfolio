@@ -33,7 +33,7 @@ class ContactSection extends StatelessWidget {
             const SizedBox(height: 64),
             isDesktop
                 ? const Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
                         flex: 5,
