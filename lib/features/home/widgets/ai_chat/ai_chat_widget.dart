@@ -44,6 +44,7 @@ class _AIChatWidgetState extends ConsumerState<AIChatWidget> {
   }
 
   Future<void> _send(String text) async {
+    _scrollToBottom();
     await ref.read(chatMessageProvider.notifier).send(text);
     _scrollToBottom();
   }
