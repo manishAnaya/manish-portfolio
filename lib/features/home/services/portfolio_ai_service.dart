@@ -7,13 +7,19 @@ class PortfolioAIService {
   static const _baseUrl =
       'https://portfolioagent-production-4fe1.up.railway.app';
 
+  final String _sessionId = _generateSessionId();
+
+  static String _generateSessionId() {
+    return DateTime.now().millisecondsSinceEpoch.toString();
+  }
+
   Future<String> askQuestion(String question) async {
     try {
       final response = await http
           .post(
             Uri.parse('$_baseUrl/ask'),
             headers: {'Content-Type': 'application/json'},
-            body: jsonEncode({'question': question}),
+            body: jsonEncode({'question': question, 'session_id': _sessionId}),
           )
           .timeout(const Duration(seconds: 30));
 
