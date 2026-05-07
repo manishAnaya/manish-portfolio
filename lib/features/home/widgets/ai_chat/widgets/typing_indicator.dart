@@ -32,16 +32,7 @@ class _TypingIndicatorState extends State<TypingIndicator>
     return Container(
       margin: const EdgeInsets.only(left: 16, bottom: 8, top: 4),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerLow,
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(4),
-          topRight: Radius.circular(16),
-          bottomLeft: Radius.circular(16),
-          bottomRight: Radius.circular(16),
-        ),
-        border: Border.all(color: colorScheme.outlineVariant),
-      ),
+      decoration: BoxDecoration(color: colorScheme.surfaceContainerLow),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: List.generate(3, (i) {
