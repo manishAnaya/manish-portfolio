@@ -4,8 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'portfolio_ai_service.g.dart';
 
 class PortfolioAIService {
-  static const _baseUrl =
-      'https://portfolioagent-production-4fe1.up.railway.app';
+  static const _baseUrl = 'https://portfolio-agent-nt2f.onrender.com';
 
   final String _sessionId = _generateSessionId();
 
