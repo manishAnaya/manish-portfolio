@@ -18,7 +18,7 @@ class AppConstants {
   static const String location = 'Bengaluru, India';
   static const String currentCompany = 'Finva Tech Pvt Ltd';
   static const String degree = 'B.Tech';
-  static const String expYears = '5+';
+  static const String expYears = '6+';
   static const String appsBuilt = '10+';
   static const String aiCert = '3';
   static const String compWorks = '3';
