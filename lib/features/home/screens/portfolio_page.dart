@@ -90,7 +90,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
             ),
           ),
           Positioned(
-            bottom: 32,
+            bottom: 72,
             right: 96,
             child: _ScrollToTopButton(scrollController: _scrollController),
           ),

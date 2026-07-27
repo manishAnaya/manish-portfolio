@@ -152,7 +152,7 @@ class _AIChatFABState extends State<AIChatFAB>
           ),
         ),
         Positioned(
-          bottom: 24,
+          bottom: 72,
           right: 24,
           child: _FABButton(isOpen: _isOpen, onTap: _toggle),
         ),
