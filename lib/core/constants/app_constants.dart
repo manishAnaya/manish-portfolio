@@ -3,22 +3,27 @@ class AppConstants {
 
   // Personal Info
   static const String name = 'Manish Kumar Agrahari';
-  static const String title = 'Flutter Developer · Exploring AI & GenAI';
+  static const String title =
+      'Software Engineer · Generative AI & LLM Applications';
   static const String tagline =
-      'Building production-grade Flutter apps\nand stepping into the world of Generative AI';
+      'Building intelligent applications with Generative AI, '
+      'RAG, LLMs and Flutter';
   static const String bio =
-      'Flutter developer with 5+ years of experience shipping cross-platform apps '
-      'across fintech, edtech, e-commerce, and enterprise domains. '
-      'Currently building AI-powered products at Finva Tech and actively upskilling '
-      'in Generative AI — with certifications from GUVI, Scaler, and OutSkill. '
-      'I care about clean architecture, great UX, and writing code that scales.';
+      'Software Engineer with 4+ years of software development '
+      'experience building production applications across fintech, '
+      'e-commerce, education, and enterprise domains. Currently '
+      'working on AI-powered products and building applications '
+      'using LLMs, Retrieval-Augmented Generation, LangChain, '
+      'LangGraph, vector databases, and Python. '
+      'Experienced in Flutter application development with a '
+      'growing focus on Generative AI and Agentic AI.';
 
   static const String email = 'manish.ag555@gmail.com';
   static const String phone = '+91 70070 33600';
   static const String location = 'Bengaluru, India';
   static const String currentCompany = 'Finva Tech Pvt Ltd';
   static const String degree = 'B.Tech';
-  static const String expYears = '6+';
+  static const String expYears = '4+';
   static const String appsBuilt = '10+';
   static const String aiCert = '3';
   static const String compWorks = '3';

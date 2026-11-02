@@ -14,45 +14,30 @@ List<Experience> experiences(Ref ref) {
       isCurrent: true,
       logoEmoji: '🤖',
       responsibilities: const [
-        'Built and shipped an AI-powered chatbot platform (Flutter + REST) with workspace management, custom prompt configuration, and citation fetching — enabling teams to deploy intelligent assistants without code.',
-        'Delivered a fully configurable portfolio & risk management system for asset managers and hedge funds, supporting MiFID, FINMA, and UCITS compliance workflows with real-time reporting.',
-        'Translated complex UI/UX wireframes into pixel-perfect, responsive Flutter interfaces that work seamlessly across Android and iOS.',
-        'Integrated token-based auth, secure API layers, and dark mode with smooth animations — reducing user-reported UI issues by improving perceived performance.',
-        'Collaborated directly with backend and AI engineers to wire frontend components to evolving APIs and AI services.',
-        'Contributed to architectural decisions on the platform to ensure scalability, security, and long-term maintainability.',
-        'Mentored junior developers and provided technical guidance on Flutter best practices and clean architecture.',
+        'Contributed to the development of CubeBot Pro, an AI-powered chatbot platform using Flutter and REST APIs.',
+        'Implemented document processing workflows, including document loading, text chunking, and embedding generation.',
+        'Integrated vector database operations and retrieval workflows to support document-grounded question answering.',
+        'Designed prompts combining retrieved document context with LLM responses.',
+        'Worked with Google Gemini, OpenAI, and Groq models for AI-powered application functionality.',
+        'Developed Flutter interfaces for project management, document workflows, and AI conversations.',
+        'Contributed to the development of fintech applications, including portfolio and risk management workflows.',
       ],
     ),
     Experience(
       company: 'Act T Connect',
       role: 'Flutter Developer',
-      duration: 'Jul 2022 – Mar 2024',
+      duration: 'Jul 2022 – Jan 2024',
       location: 'Jhansi, Uttar Pradesh · On-site',
       isCurrent: false,
       logoEmoji: '📱',
       responsibilities: const [
-        'Designed and launched 8+ production apps on Google Play Store across e-commerce, edtech, recruitment, and HR domains.',
-        'Built a vehicle auto-parts marketplace with make/model/year-based search, detailed specs, and seamless in-app checkout.',
-        'Delivered a geo-based tutor discovery platform connecting students with nearby educators — with ratings, reviews, and smart filtering.',
-        'Shipped a recruitment app with job/internship discovery, resume upload, application tracking, and career analytics dashboard.',
-        'Developed a jewelry e-commerce app with product collections, secure payments, and a clean shopping experience.',
-        'Built an HR & payroll management app with attendance tracking, employee management, and real-time location sharing.',
-        'Maintained consistent UI/UX standards across all apps by translating Figma designs into reusable Flutter component systems.',
-      ],
-    ),
-    Experience(
-      company: 'IBigdo Technology',
-      role: 'Junior Flutter Developer',
-      duration: 'Aug 2020 – Jun 2022',
-      location: 'Noida, Uttar Pradesh · On-site',
-      isCurrent: false,
-      logoEmoji: '💡',
-      responsibilities: const [
-        'Contributed to the development and enhancement of cross-platform mobile applications using Flutter and Dart across Android and iOS.',
-        'Collaborated with technical and design teams to translate requirements and functional specifications into working app features.',
-        'Integrated third-party REST APIs and services to enable real-time data retrieval and functionality within mobile apps.',
-        'Maintained detailed records of releases, bug fixes, and software changes for optimum traceability and team alignment.',
-        'Wrote clean, modular Dart code following team conventions — building a strong foundation in mobile app architecture.',
+        'Developed and delivered 8+ production Flutter applications across e-commerce, education, recruitment, and HR domains.',
+        'Built a vehicle auto-parts marketplace with make, model, and year-based product search.',
+        'Developed a tutor discovery platform with location-based search, ratings, and reviews.',
+        'Implemented recruitment features including job discovery, resume uploads, and application tracking.',
+        'Developed HR application features for employee management, attendance, and location tracking.',
+        'Integrated REST APIs and third-party services into cross-platform mobile applications.',
+        'Translated Figma designs into reusable Flutter components for consistent Android and iOS experiences.',
       ],
     ),
   ];
@@ -61,17 +46,20 @@ List<Experience> experiences(Ref ref) {
 @riverpod
 List<Project> projects(Ref ref) {
   return [
+    // PROFESSIONAL AI PROJECT
     Project(
-      title: 'AI Chatbot Platform',
+      title: 'CubeBot Pro – AI Chatbot Platform',
       description:
-          'An enterprise-grade AI chatbot app with multi-workspace support, customizable prompts, conversation history, and source citation fetching. Built with Flutter, integrated with AI APIs, token-based auth, and full dark mode support.',
+          'An AI-powered document intelligence platform. Contributed to document loading, text chunking, embedding generation, vector database operations, retrieval workflows, prompt design, and Flutter application interfaces. Integrated LLM functionality using Gemini, OpenAI, and Groq.',
       techStack: [
         'Flutter',
         'Dart',
+        'Python',
+        'LLMs',
+        'RAG',
+        'Embeddings',
+        'Vector Databases',
         'REST API',
-        'AI Integration',
-        'Riverpod',
-        'Token Auth',
       ],
       emoji: '🤖',
       isFeatured: true,
@@ -79,62 +67,88 @@ List<Project> projects(Ref ref) {
           'https://play.google.com/store/apps/details?id=com.finvatech.chatbot',
       appStoreUrl: 'https://apps.apple.com/in/app/cubebot-pro/id6593685926',
     ),
+
+    // PERSONAL AI PROJECT
+    Project(
+      title: 'Personal Portfolio AI Assistant',
+      description:
+          'Built and deployed an AI assistant for my portfolio using a Retrieval-Augmented Generation architecture. The application uses document retrieval and LLMs to answer questions about my professional experience, skills, and projects.',
+      techStack: [
+        'Python',
+        'LangChain',
+        'FastAPI',
+        'ChromaDB',
+        'Hugging Face',
+        'Groq',
+        'Cohere',
+        'Render',
+      ],
+      emoji: '🧠',
+      isFeatured: true,
+    ),
+
+    // PERSONAL RAG PROJECT
+    Project(
+      title: 'RAG Chatbot – PDF Question Answering',
+      description:
+          'Developed a document question-answering application that loads PDF files, splits their content into chunks, generates embeddings, and retrieves relevant context to answer user questions using an LLM.',
+      techStack: [
+        'Python',
+        'LangChain',
+        'PyPDFLoader',
+        'Hugging Face',
+        'FAISS',
+        'ChromaDB',
+        'Groq',
+        'Streamlit',
+      ],
+      emoji: '📄',
+      isFeatured: true,
+    ),
+
+    // LANGGRAPH PROJECT
+    Project(
+      title: 'LangGraph Agent Workflow',
+      description:
+          'Implemented an agent workflow using LangGraph with graph state management, message handling, conditional routing, and tool-calling patterns.',
+      techStack: ['Python', 'LangChain', 'LangGraph', 'LLMs', 'Tool Calling'],
+      emoji: '🔗',
+      isFeatured: true,
+    ),
+
+    // PROFESSIONAL FINTECH PROJECT
     Project(
       title: 'Portfolio & Risk Management System',
       description:
-          'A configurable fintech app for asset managers, hedge funds, and family offices. Features real-time portfolio tracking, order management, risk analytics',
-      techStack: [
-        'Flutter',
-        'Dart',
-        'Fintech',
-        'REST API',
-        'Riverpod',
-        'Data Viz',
-      ],
+          'Worked on a configurable fintech application for asset managers and investment professionals, contributing to portfolio management, reporting, and risk-related application workflows.',
+      techStack: ['Flutter', 'Dart', 'REST API', 'FinTech', 'Riverpod'],
       emoji: '📊',
       isFeatured: true,
       playStoreUrl:
           'https://play.google.com/store/apps/details?id=com.finvatech.cubepms',
     ),
+
+    // FLUTTER PROJECTS
     Project(
       title: 'Recruitment & Career Platform',
       description:
-          'A job and internship discovery app with resume upload, one-tap applications and personalized career analytics. Rated 4.8★ with 100+ downloads.',
+          'A recruitment application for discovering jobs and internships, uploading resumes, and tracking job applications.',
       techStack: ['Flutter', 'Dart', 'REST API', 'Firebase', 'GetX'],
       emoji: '💼',
       isFeatured: true,
       playStoreUrl:
           'https://play.google.com/store/apps/details?id=com.atc.spires_app',
     ),
+
     Project(
       title: 'HR & Payroll Management App',
       description:
-          'An employee management platform with real-time attendance tracking, location sharing, payroll processing, and day-to-day HR workflows — helping organisations eliminate manual processes.',
+          'An employee management application with attendance tracking, employee workflows, and location-sharing functionality.',
       techStack: ['Flutter', 'Dart', 'REST API', 'GPS', 'Firebase'],
       emoji: '🏢',
       isFeatured: false,
       playStoreUrl:
           'https://play.google.com/store/apps/details?id=com.atc.pinghr',
-    ),
-    Project(
-      title: 'EdTech Tutor Discovery Platform',
-      description:
-          'A geo-based platform bridging students and local educators. Students discover tutors by subject and location, evaluate via ratings and reviews, and connect instantly — fostering affordable, accessible education.',
-      techStack: ['Flutter', 'Dart', 'REST API', 'Google Maps', 'Firebase'],
-      emoji: '🎓',
-      isFeatured: false,
-      playStoreUrl:
-          'https://play.google.com/store/apps/details?id=com.atc.edunear',
-    ),
-    Project(
-      title: 'Auto Parts E-Commerce App',
-      description:
-          'A shopping app for automotive enthusiasts and professionals. Supports vehicle-specific part search by make, model, and year — with detailed specs, compatibility info, and secure in-app checkout.',
-      techStack: ['Flutter', 'Dart', 'REST API', 'Razorpay', 'Firebase'],
-      emoji: '🔧',
-      isFeatured: false,
-      playStoreUrl:
-          'https://play.google.com/store/apps/details?id=com.atc.newkaka',
     ),
   ];
 }
