@@ -101,7 +101,7 @@ class _HeroAvtarState extends State<HeroAvtar>
                 ),
               ),
 
-              // Flutter × AI tag at bottom
+              // AI tag at bottom
               Positioned(
                 bottom: isMobile ? 8 : 12,
                 child: Container(
@@ -117,7 +117,7 @@ class _HeroAvtarState extends State<HeroAvtar>
                     ),
                   ),
                   child: Text(
-                    'Flutter × AI',
+                    'Building with AI',
                     style: GoogleFonts.dmMono(
                       fontSize: 11,
                       color: AppColors.neonCyan,
