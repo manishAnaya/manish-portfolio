@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/about/about_section.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/ai_chat/ai_chat_fab.dart';
 import 'package:manish_flutter_portfolio/features/home/widgets/ai_chat/ai_chat_section.dart';

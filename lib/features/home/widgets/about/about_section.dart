@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:manish_flutter_portfolio/core/utils/responsive.dart';
 import 'package:manish_flutter_portfolio/shared/widgets/animated_custom.dart';
 import 'package:manish_flutter_portfolio/shared/widgets/section_header.dart';

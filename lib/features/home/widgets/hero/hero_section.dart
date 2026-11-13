@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:manish_flutter_portfolio/core/utils/responsive.dart';
 import 'widgets/background_orbs.dart';
 import 'widgets/background_grid.dart';
