@@ -32,7 +32,7 @@ class AppConstants {
   static const String github = 'https://github.com/manishAnaya';
   static const String locationUrl = 'https://www.google.com/maps?q=Bengaluru';
   static const String cvUrl =
-      'https://drive.google.com/file/d/1G6729FoKKGIEI4BxftlNE1z7GCBfJPbd/view?usp=drive_link';
+      'https://drive.google.com/file/d/1Onc6ZzUnXVrC8b5SI0IHU0ZYJrmQeSm5/view?usp=drive_link';
 
   //About Section
 

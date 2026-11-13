@@ -29,7 +29,7 @@ class AboutSection extends StatelessWidget {
                   label: 'About Me',
                   title: 'Who I Am',
                   subtitle:
-                      'Flutter developer transitioning into AI — building things that matter.',
+                      'Software Engineer transitioning into AI — building things that matter.',
                 ),
               ),
               const SizedBox(height: 60),
